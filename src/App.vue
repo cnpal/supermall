@@ -1,15 +1,23 @@
 <template>
   <div id="app">
+    <router-view/>
+    <tab-footer></tab-footer>
   </div>
 </template>
 
 <script>
+  import TabFooter from '@/components/common/TabFooter.vue'
   export default {
-    name: 'App',
-    components: {}
+    name:'App',
+    components:{
+      TabFooter
+    }
   }
 </script>
 
-<style>
-  @import "./assets/css/base.css";
+<style lang="less">
+  // @import "./assets/css/base.css";
+  #app{
+    padding-bottom:1rem;
+  }
 </style>
